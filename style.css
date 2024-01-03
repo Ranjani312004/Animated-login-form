@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0%;
+    font-family: consolas;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width:100%;
+}
+div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:15px;
+    margin: 15px;
+    background-color: black;
+    padding: 5rem 2rem;
+    border-radius: 7px;
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+    border: 1px solid black;
+    width: 25rem;
+}
+.title{
+    font-size: 2.1rem;
+    color: bisque;
+    margin-bottom: 30px;
+}
+.loginbtn{
+    margin: 10px;
+    width: 8rem;
+    height: 4hv;
+    padding: .9rem;
+    text-decoration: underline;
+    border-radius:40px;
+    font-size: 1.0rem;
+    background: transparent;
+    color: white;
+    cursor: pointer;     
+    cursor: pointer;
+   border: 2px solid rgb(0, 133, 40);
+   transition: all .4s ease-in-out;
+}
+.loginbtn:hover{
+    background: green;
+    border: 2px solid rgb(0, 133, 40);
+}
+.pass, .uname{
+    text-align: center;
+    border: 2px solid cyan;
+    margin: 1.0rem;
+    width: 15rem;
+    height: 15hv;
+    padding: 15px;
+    color: white;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    background: transparent;
+    outline: none;
+    transition: all .2s ease-in-out;
+
+}
+.pass:focus, .uname:focus{
+
+    width:20rem;
+    animation-name: colorchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes colorchange {
+
+    0%{
+        border-color: rgb(146, 144, 0);
+        color: rgb(146, 144, 0);
+    }
+    20%{
+        border-color: rgb(81, 0, 128);
+        color:  rgb(81, 0, 128);
+    }
+    30%{
+        border-color: green;
+        color: green;
+    }
+    40%{
+        border-color: rgb(128, 0, 70);
+        color: rgb(128, 0, 70);
+    }
+   50%{
+        border-color: rgb(0, 77, 128);
+        color: rgb(0, 77, 128);
+    }
+    60%{
+        border-color: rgb(128, 51, 0);
+        color:rgb(128, 51, 0);
+    }
+    70%{
+        border-color: rgb(128, 0, 0);
+        color: rgb(128, 0, 0);
+    }
+    80%{
+        border-color: rgb(102, 0, 128);
+        color:rgb(102, 0, 128);
+    }
+    90%{
+        border-color: rgb(47, 128, 0);
+        color: rgb(47, 128, 0);
+    }
+   100%{
+        border-color: rgb(0, 9, 128);
+        color: rgb(0, 9, 128);
+    }
+
+}
